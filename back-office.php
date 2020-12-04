@@ -3,7 +3,8 @@
     // vérification de la session
     if (isset($_SESSION["user"]) ) {
         // yes, alors bienvenue
-        include("back-office--template.php"); } else { // bye
+        include("back-office--template.php"); 
+    } else { // bye
         header("Location: index.html#mauvaise-session"); exit; // exit après une redirection
     } 
 ?>
